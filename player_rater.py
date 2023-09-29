@@ -35,7 +35,12 @@ with open(csv_path, encoding='utf-8') as file:
     for line in csv_file:
         if 'Transfer Status' in line:
             for key in attrib_weight:
-                attrib_index[key] = line.index(key)
+                try:
+                    attrib_index[key] = line.index(key)
+                except ValueError:
+                    print('%s attribute data not present.\nPlease check your '
+                          'exported custom player search view.' % key)
+                    quit()
             name_index = line.index('Name')
             break
     file.close()
