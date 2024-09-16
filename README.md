@@ -1,4 +1,4 @@
-# Player Rater
+# FM Player Rater
 
 A way of quickly and objectively rating players in Football Manager based upon
 attribute testing performed by
@@ -9,10 +9,10 @@ Football Manager.
 
 ## How to Use
 
-Use of the Player Rater requires that the "Disable Player Attribute Masking"
+Use of the FM Player Rater requires that the "Disable Player Attribute Masking"
 option was selected on starting your game save.
 
-In addition, Player Rater functionality requires export of the following data
+In addition, FM Player Rater functionality requires export of the following data
 by creating a custom player search view containing the following columns:
 - Player Name
 - ALL Technical attributes
